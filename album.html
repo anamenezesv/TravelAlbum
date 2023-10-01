@@ -1,52 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Álbum</title>
-    <link rel="stylesheet" href="assets\css\styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 </head>
 
-<header>
-    <div class="menu">
-        <h1 class="menu-title">Brasil Afora</h1>
-        <a href="index.html">Início</a>
-        <a href="album.html">Álbuns</a>
-        <a href="index.html">Sobre</a>
-        <a href="index.html">Contato</a>
-    </div>
-    <hr>
-</header>
-
 <body>
-    <h1>Título do Álbum</h1>
-    <section class="album-details">
-        <div class="album-cover">
-            <img src="caminho-para-a-foto-de-capa.jpg" alt="Capa do Álbum">
+    <header>
+        <div class="menu">
+            <h1 class="menu-title">Brasil Afora</h1>
+            <a href="index.html">Início</a>
+            <a href="album.html">Álbuns</a>
+            <a href="index.html">Sobre</a>
+            <a href="index.html">Contato</a>
         </div>
-        <div class="album-info">
-            <h2>Título do Álbum</h2>
-            <p>Descrição do Álbum: Uma breve descrição do conteúdo do álbum.</p>
-            <p>Geolocalização: Nome do Local ou Latitude/Longitude</p>
-            <p>Data de Registro: 01 de Janeiro de 2023</p>
+        <hr>
+    </header>
+
+
+    <section class="specified-album">
+        <div class="title">
+            <h3>Foz do Iguaçu: O Encanto das Cataratas</h3>
+            <hr>
+        </div>
+        <div class="specified-album-details">
+            <div class="specified-album-cover">
+                <img src="assets\img\FozDoIguacu-Parana.jpg" alt="CapaFozDoIguacu">
+            </div>
+            <div class="specified-album-info">
+                <h6 class="paragraph-title">Descrição</h6>
+                <p class="description">Situada no coração do Brasil, é um paraíso natural e um destino obrigatório para
+                    os amantes da natureza e das maravilhas mundiais. Suas majestosas Cataratas do Iguaçu, com suas
+                    poderosas quedas d'água e beleza hipnotizante, são um espetáculo único. Além das cataratas, a cidade
+                    oferece uma rica biodiversidade, trilhas na selva, passeios de barco emocionantes e uma atmosfera
+                    calorosa. Com sua localização estratégica na fronteira entre o Brasil, Argentina e Paraguai, Foz do
+                    Iguaçu também permite explorar diferentes culturas em um único destino. Um lugar cativante que deixa
+                    memórias inesquecíveis.</p>
+                <div class="additional-info">
+                    <div class="album-location">
+                        <h6 class="paragraph-title">Localização</h6>
+                        <p>Rio de Janeiro, Brasil</p>
+                        <p>25.6866° S, 54.4446° O</p>
+                    </div>
+                    <div>
+                        <h6 class="paragraph-title">Data de Registro</h6>
+                        <p>15 de Julho de 2023</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="item-grid">
-        <article class="item">
-            <img src="caminho-para-a-foto-1.jpg" alt="Item 1">
-            <p>Descrição do Item 1 (30 caracteres)</p>
-        </article>
-        <article class="item">
-            <img src="caminho-para-a-foto-2.jpg" alt="Item 2">
-            <p>Descrição do Item 2 (30 caracteres)</p>
-        </article>
-        <!-- Adicione mais artigos para cada item do álbum -->
+        <div class="title">
+            <h3>Itens (fotos/vídeos)</h3>
+            <hr>
+        </div>
+        <div class="items">
+            <article class="item">
+                <div class="item-content">
+                    <img src="assets\img\CataratasDoIguacu1.jpeg" alt="Item 1">
+                    <p>Patrimônio mundial</p>
+                </div>
+            </article>
+            <article class="item">
+                <div class="item-content">
+                    <img src="assets\img\CataratasDoIguacu2.jpeg" alt="Item 2">
+                    <p>Beleza natural única</p>
+                </div>
+            </article>
+            <article class="item">
+                <div class="item-content">
+                    <img src="assets\img\CataratasDoIguacu3.jpeg" alt="Item 3">
+                    <p>Cachoeiras deslumbrantes</p>
+                </div>
+            </article>
+            <article class="item">
+                <div class="item-content">
+                    <img src="assets\img\CataratasDoIguacu4.jpeg" alt="Item 4">
+                    <p>Natureza majestosa</p>
+                </div>
+            </article>
+            <article class="item">
+                <div class="item-content">
+                    <img src="assets\img\CataratasDoIguacu5.jpeg" alt="Item 5">
+                    <p>Noite estrelada</p>
+                </div>
+            </article>
+            <article class="item">
+                <div class="item-content">
+                    <img src="assets\img\CataratasDoIguacu6.jpeg" alt="Item 6">
+                    <p>Fronteira das águas</p>
+                </div>
+            </article>
+            <article class="item">
+                <div class="item-content">
+                    <img src="assets\img\CataratasDoIguacu7.jpeg" alt="Item 7">
+                    <p>A magia das quedas</p>
+                </div>
+            </article>
+            <article class="item">
+                <div class="item-content">
+                    <img src="assets\img\CataratasDoIguacu8.jpeg" alt="Item 8">
+                    <p>Espetáculo das águas</p>
+                </div>
+            </article>
+        </div>
     </section>
-</body>
 
-<footer>
-    <p>© 2023 Ana Menezes</p>
-</footer>
+    <footer>
+    </footer>
+</body>
 
 </html>

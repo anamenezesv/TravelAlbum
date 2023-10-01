@@ -14,6 +14,10 @@ footer {
     padding: 10px 10px 0px 10px;
 }
 
+.title h1 {
+    margin-bottom: 0;
+}
+
 header hr {
     margin-top: 5px;
     margin-bottom: 0;
@@ -22,11 +26,12 @@ header hr {
 .menu {
     color: white;
     display:inline-flex;
+    background-color: rgb(34, 139, 34);
+    width: 100%;
     
     .menu-title {
-        background-color: rgb(34, 139, 34);
         border-radius: 5px;
-        padding: 5px;
+        padding: 10px;
         margin: 5px;
     }
 }
@@ -35,7 +40,7 @@ header hr {
     padding-left: 10px;
     align-self: center;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 /*--------------*/
 
@@ -167,3 +172,87 @@ header hr {
     }
 }
 /*----------------*/
+
+
+/* Estilos do album */
+.specified-album-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.specified-album-cover {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.specified-album-cover img {
+    max-height: 319px;
+    max-width: 478px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.specified-album-info {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+
+    .description {
+        text-align: justify;
+    }
+
+    .additional-info {
+        display: inline-flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .album-location {
+        width: 70%;
+    }
+
+    .paragraph-title {
+        color: blue;
+        font-size: 13px;
+        margin: 0;
+    }
+}
+
+.specified-album-info h2 {
+    font-size: 24px;
+}
+
+.specified-album-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color:rgb(34, 139, 34, 20%);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+
+    .item-content {
+        width: auto;
+        height: auto;
+    }
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+/*------------------*/
