@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Álbum</title>
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Certifique-se de que o caminho esteja correto -->
+    <link rel="stylesheet" href="assets\css\styles.css">
 </head>
 
+<header>
+    <div class="menu">
+        <h1 class="menu-title">Brasil Afora</h1>
+        <a href="index.html">Início</a>
+        <a href="album.html">Álbuns</a>
+        <a href="index.html">Sobre</a>
+        <a href="index.html">Contato</a>
+    </div>
+    <hr>
+</header>
+
 <body>
-    <header>
-        <div>
-            <h1>Brasil Afora</h1>
-            <nav>
-                <a href="#">Início</a>
-                <a href="#">Destinos</a>
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
-            </nav>
+    <h1>Título do Álbum</h1>
+    <section class="album-details">
+        <div class="album-cover">
+            <img src="caminho-para-a-foto-de-capa.jpg" alt="Capa do Álbum">
         </div>
-    </header>
+        <div class="album-info">
+            <h2>Título do Álbum</h2>
+            <p>Descrição do Álbum: Uma breve descrição do conteúdo do álbum.</p>
+            <p>Geolocalização: Nome do Local ou Latitude/Longitude</p>
+            <p>Data de Registro: 01 de Janeiro de 2023</p>
+        </div>
+    </section>
 
-    <main>
-        <section class="album-details">
-            <h2>Detalhes do Álbum</h2>
-            <article class="album">
-                <img src="assets/img/FozDoIguacu-Parana.jpg" alt="FozDoIguacu">
-                <h3>Foz do Iguaçu</h3>
-                <p>Descubra a beleza das Cataratas do Iguaçu, uma das maiores quedas d'água do mundo, cercada por exuberante floresta tropical.</p>
-                <a href="#">Voltar aos Destinos</a>
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2023 Ana Menezes - Todos os direitos reservados.</p>
-    </footer>
+    <section class="item-grid">
+        <article class="item">
+            <img src="caminho-para-a-foto-1.jpg" alt="Item 1">
+            <p>Descrição do Item 1 (30 caracteres)</p>
+        </article>
+        <article class="item">
+            <img src="caminho-para-a-foto-2.jpg" alt="Item 2">
+            <p>Descrição do Item 2 (30 caracteres)</p>
+        </article>
+        <!-- Adicione mais artigos para cada item do álbum -->
+    </section>
 </body>
+
+<footer>
+    <p>© 2023 Ana Menezes</p>
+</footer>
 
 </html>

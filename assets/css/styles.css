@@ -1,116 +1,169 @@
-/* Reset de margens e preenchimento para o body */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+/* Estilos gerais */
+header {
+    font-family: Arial, sans-serif;
 }
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+}
+footer {
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+.title {
+    color: rgb(34, 139, 34);
+    padding: 10px 10px 0px 10px;
 }
 
-nav {
-    margin-top: 1rem;
+header hr {
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
-nav a {
-    color: #fff;
-    margin: 0 1rem;
+.menu {
+    color: white;
+    display:inline-flex;
+    
+    .menu-title {
+        background-color: rgb(34, 139, 34);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+.menu a {
+    padding-left: 10px;
+    align-self: center;
     text-decoration: none;
+    color: black;
+}
+/*--------------*/
+
+
+/* Estilos index */
+.highlights {
+    
+    .background-carousel {
+        background-color: rgb(34, 139, 34, 20%);
+        padding: 20px 0;
+        margin: 0 50px;
+    }
+    
+    .highlights-carousel {
+        text-align: center;
+    }
+    
+    .carousel {
+        width: auto;
+        max-width: 60%;
+        height: auto;
+        max-height: 20%;
+        display: inline-flex;
+    }
+    
+    .carousel-caption h3 {
+        background-color: rgb(0, 0, 0, 50%);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .carousel-control-prev {
+        color: rgb(0, 0, 0, 50%);
+    }
 }
 
-main {
-    max-width: 1200px; /* Define a largura máxima do conteúdo principal */
-    margin: 0 auto; /* Centraliza o conteúdo na página */
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
-    border-radius: 5px;
-}
+.map {
 
-.carousel {
-    max-width: 100%; /* Garante que o carrossel não ultrapasse a largura da janela */
-}
+    .map-content {
+        text-align: -webkit-center;
+    }
 
-.carousel-inner img {
-    max-width: 100%;
-    height: auto;
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para a legenda do carrossel */
-    color: #fff;
-    border-radius: 5px;
-}
-
-.carousel-indicators {
-    padding-bottom: 10px;
-}
-
-.section {
-    margin-bottom: 20px;
-    text-align: center;
+    .map-image {
+        width: 80%;
+        height: 300px;
+        display: flex;
+    }
 }
 
 .albums {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px; /* Espaçamento entre o carrossel e os álbuns */
+
+    .albums-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .album {
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .album img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .album h2 {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    
+    .album p {
+        padding: 0 10px 10px 10px;
+        flex-grow: 1;
+    }
+    
+    .album a {
+        background-color: rgb(34, 139, 34);
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        margin-top: auto;
+    }
+    
+    .album a:hover {
+        background-color: rgb(34, 139, 34, 50%);
+    }
+    
 }
 
-.album {
-    width: calc(33.33% - 20px); /* Define a largura dos álbuns, deixando algum espaço entre eles */
-    margin-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
-    border-radius: 5px;
-    overflow: hidden; /* Impede que o conteúdo derrame para fora do contêiner */
-}
-
-.album img {
-    max-width: 100%;
-    height: auto;
-}
-
-.album h3 {
-    padding: 10px;
-    font-size: 1.2rem;
-    text-align: center; /* Centraliza o título */
-}
-
-.album p {
-    padding: 0 10px 10px 10px;
-    text-align: center; /* Centraliza o texto */
-}
-
-.album a {
-    display: block;
-    background-color: #333;
+.footer-content {
+    background-color: rgb(34, 139, 34);
     color: #fff;
-    text-align: center; /* Centraliza o botão de ver detalhes */
-    padding: 10px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
 
-.album a:hover {
-    background-color: #555;
-}
+    .about {
+        flex: 1;
+        padding-right: 50px;
+        text-align: justify;
+    }
 
-/* Estilos para os títulos das seções */
-h2 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: #333;
-    text-transform: uppercase;
+    .author-info {
+        margin-bottom: 5px;
+    }
+
+    .author-details p {
+        margin: 0;
+    }
+
+    .social-links {
+        display: flex;
+    }
+
+    .social-links a {
+        padding-left: 20px;
+        text-decoration: none;
+        color: #fff;
+    }
 }
+/*----------------*/
