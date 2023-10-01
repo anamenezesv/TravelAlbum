@@ -1,0 +1,116 @@
+/* Reset de margens e preenchimento para o body */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px; /* Define a largura máxima do conteúdo principal */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    border-radius: 5px;
+}
+
+.carousel {
+    max-width: 100%; /* Garante que o carrossel não ultrapasse a largura da janela */
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para a legenda do carrossel */
+    color: #fff;
+    border-radius: 5px;
+}
+
+.carousel-indicators {
+    padding-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px; /* Espaçamento entre o carrossel e os álbuns */
+}
+
+.album {
+    width: calc(33.33% - 20px); /* Define a largura dos álbuns, deixando algum espaço entre eles */
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    border-radius: 5px;
+    overflow: hidden; /* Impede que o conteúdo derrame para fora do contêiner */
+}
+
+.album img {
+    max-width: 100%;
+    height: auto;
+}
+
+.album h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center; /* Centraliza o título */
+}
+
+.album p {
+    padding: 0 10px 10px 10px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.album a {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    text-align: center; /* Centraliza o botão de ver detalhes */
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.album a:hover {
+    background-color: #555;
+}
+
+/* Estilos para os títulos das seções */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    text-transform: uppercase;
+}
