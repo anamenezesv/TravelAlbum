@@ -255,20 +255,15 @@ header hr {
     height: auto;
     margin-bottom: 10px;
 }
-
 /*------------------*/
 
 
-/* Estilos do popup */
-
 /* Estilo para a modal */
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
 }
@@ -285,13 +280,12 @@ header hr {
     transform: translate(-50%, -50%);
 }
 
-/* Estilo para o botão de fechar */
-.close {
+#closeModal.close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
+    color: white;
+    font-size: xxx-large;
 }
-
 /*------------------*/
