@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Álbum</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -61,59 +61,65 @@
             <hr>
         </div>
         <div class="items">
-            <article class="item">
+            <article class="item" data-item-id="1">
                 <div class="item-content">
                     <img src="assets\img\CataratasDoIguacu1.jpeg" alt="Item 1">
                     <p>Patrimônio mundial</p>
                 </div>
             </article>
-            <article class="item">
+            <article class="item" data-item-id="2">
                 <div class="item-content">
                     <img src="assets\img\CataratasDoIguacu2.jpeg" alt="Item 2">
                     <p>Beleza natural única</p>
                 </div>
             </article>
-            <article class="item">
+            <article class="item" data-item-id="3">
                 <div class="item-content">
                     <img src="assets\img\CataratasDoIguacu3.jpeg" alt="Item 3">
                     <p>Cachoeiras deslumbrantes</p>
                 </div>
             </article>
-            <article class="item">
+            <article class="item" data-item-id="4">
                 <div class="item-content">
                     <img src="assets\img\CataratasDoIguacu4.jpeg" alt="Item 4">
                     <p>Natureza majestosa</p>
                 </div>
             </article>
-            <article class="item">
+            <article class="item" data-item-id="5">
                 <div class="item-content">
                     <img src="assets\img\CataratasDoIguacu5.jpeg" alt="Item 5">
                     <p>Noite estrelada</p>
                 </div>
             </article>
-            <article class="item">
+            <article class="item" data-item-id="6">
                 <div class="item-content">
                     <img src="assets\img\CataratasDoIguacu6.jpeg" alt="Item 6">
                     <p>Fronteira das águas</p>
                 </div>
             </article>
-            <article class="item">
+            <article class="item" data-item-id="7">
                 <div class="item-content">
                     <img src="assets\img\CataratasDoIguacu7.jpeg" alt="Item 7">
                     <p>A magia das quedas</p>
                 </div>
             </article>
-            <article class="item">
+            <article class="item" data-item-id="8">
                 <div class="item-content">
                     <img src="assets\img\CataratasDoIguacu8.jpeg" alt="Item 8">
                     <p>Espetáculo das águas</p>
+                    <a href="item.html">Sobre</a>
                 </div>
             </article>
         </div>
     </section>
 
-    <footer>
-    </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
 </body>
 
 </html>
